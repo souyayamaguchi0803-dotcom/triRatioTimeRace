@@ -1,0 +1,29 @@
+name: Python Unittests
+
+# 1. いつこのロボットを動かすか（トリガー）
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+# 2. 何をさせるか（ジョブ）
+jobs:
+  test:
+    # 最新のUbuntu（Linux）サーバーを一時的に借りる
+    runs-on: ubuntu-latest
+
+    # 3. 具体的な作業手順（ステップ）
+    steps:
+    # ① サーバーにあなたのコードをダウンロードする（必須のおまじない）
+    - uses: actions/checkout@v4
+    
+    # ② サーバーにPythonをインストールする
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12.5"
+        
+    # ③ unittestを実行する
+    - name: Run tests
+      run: python -m unittest test.py
