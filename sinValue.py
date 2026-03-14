@@ -1,2 +1,6 @@
 def sinValue(triRatio):
-    return "0"
+    match triRatio:
+        case "sin0°":
+            return "0"
+        case "sin30°":
+            return "1/2"
