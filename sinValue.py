@@ -6,5 +6,5 @@ SIN_VALUE = {
     "sin90°": "1"
 }
 
-def sinValue(triRatio):
-    return SIN_VALUE[triRatio]
+def sin_value(tri_ratio):
+    return SIN_VALUE[tri_ratio]
