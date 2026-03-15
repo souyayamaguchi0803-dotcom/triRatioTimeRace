@@ -1,12 +1,10 @@
+SIN_VALUE = {
+    "sin0°": "0",
+    "sin30°": "1/2",
+    "sin45°": "√2/2",
+    "sin60°": "√3/2",
+    "sin90°": "1"
+}
+
 def sinValue(triRatio):
-    match triRatio:
-        case "sin0°":
-            return "0"
-        case "sin30°":
-            return "1/2"
-        case "sin45°":
-            return "√2/2"
-        case "sin60°":
-            return "√3/2"
-        case "sin90°":
-            return "1"
+    return SIN_VALUE[triRatio]
