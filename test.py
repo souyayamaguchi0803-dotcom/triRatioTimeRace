@@ -6,6 +6,8 @@ class testSinValue(unittest.TestCase):
         self.assertEqual(sinValue("sin0°"), "0")
     def test_sin_30(self):
         self.assertEqual(sinValue("sin30°"), "1/2")
+    def test_sin_45(self):
+        self.assertEqual(sinValue("sin45°"), "√2/2")
         
 if __name__ == "__main__":
     unittest.main()
