@@ -6,3 +6,5 @@ def sinValue(triRatio):
             return "1/2"
         case "sin45°":
             return "√2/2"
+        case "sin60°":
+            return "√3/2"
