@@ -8,3 +8,5 @@ def sinValue(triRatio):
             return "√2/2"
         case "sin60°":
             return "√3/2"
+        case "sin90°":
+            return "1"
