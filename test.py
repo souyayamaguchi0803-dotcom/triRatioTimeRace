@@ -1,5 +1,5 @@
 import unittest
-from sinValue import sin_value
+from sin_value import sin_value
 
 class TestSinValue(unittest.TestCase):
     def test_sin_0(self):
