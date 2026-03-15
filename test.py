@@ -12,6 +12,9 @@ class TestSinValue(unittest.TestCase):
         self.assertEqual(sin_value("sin60°"), "√3/2")
     def test_sin_90(self):
         self.assertEqual(sin_value("sin90°"), "1")
+    def test_undefined_tri_ratio(self):
+        with self.assertRaisesRegex(ValueError, "sin_value: a is not defined"):
+            sin_value("a")
         
 if __name__ == "__main__":
     unittest.main()
