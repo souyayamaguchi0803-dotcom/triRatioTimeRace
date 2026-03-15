@@ -1,4 +1,4 @@
-SIN_VALUE = {
+SIN_VALUES = {
     "sin0°": "0",
     "sin30°": "1/2",
     "sin45°": "√2/2",
@@ -7,6 +7,6 @@ SIN_VALUE = {
 }
 
 def sin_value(tri_ratio):
-    if tri_ratio not in SIN_VALUE:
+    if tri_ratio not in SIN_VALUES:
         raise ValueError(f"sin_value: {tri_ratio} is not defined")
-    return SIN_VALUE[tri_ratio]
+    return SIN_VALUES[tri_ratio]
