@@ -1,3 +1,4 @@
+# sinの三角比と値の対応
 SIN_VALUES = {
     "sin0°": "0",
     "sin30°": "1/2",
@@ -6,6 +7,7 @@ SIN_VALUES = {
     "sin90°": "1"
 }
 
+# sinの三角比に対応する値を返す
 def sin_value(tri_ratio):
     if tri_ratio not in SIN_VALUES:
         raise ValueError(f"sin_value: {tri_ratio} is not defined")
