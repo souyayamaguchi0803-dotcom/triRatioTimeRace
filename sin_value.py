@@ -7,4 +7,6 @@ SIN_VALUE = {
 }
 
 def sin_value(tri_ratio):
+    if tri_ratio not in SIN_VALUE:
+        raise ValueError(f"sin_value: {tri_ratio} is not defined")
     return SIN_VALUE[tri_ratio]
