@@ -1,7 +1,7 @@
 import unittest
 from sinValue import sinValue
 
-class testSinValue(unittest.TestCase):
+class TestSinValue(unittest.TestCase):
     def test_sin_0(self):
         self.assertEqual(sinValue("sin0°"), "0")
     def test_sin_30(self):
