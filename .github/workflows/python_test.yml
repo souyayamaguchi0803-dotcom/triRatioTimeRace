@@ -26,4 +26,4 @@ jobs:
         
     # ③ unittestを実行する
     - name: Run tests
-      run: python -m unittest test.py
+      run: python -m unittest discover
