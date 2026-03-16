@@ -1,4 +1,5 @@
 import unittest
+from judge_answer import judge
 
 class TestJudgeAnswer(unittest.TestCase):
     def test_correct_answer(self):
