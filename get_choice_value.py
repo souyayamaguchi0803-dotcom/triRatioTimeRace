@@ -9,4 +9,6 @@ VALUE_DICT = {
 }
 
 def get_choice_value(choice):
+    if choice not in CHOICES:
+        raise ValueError("get_choice_value: invalid choice")
     return VALUE_DICT[choice]
