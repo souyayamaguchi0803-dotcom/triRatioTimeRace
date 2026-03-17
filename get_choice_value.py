@@ -8,7 +8,10 @@ VALUE_DICT = {
     CHOICES[4] : "1"
 }
 
+def is_valid_choice(choice):
+    return choice in CHOICES
+
 def get_choice_value(choice):
-    if choice not in CHOICES:
+    if not is_valid_choice(choice):
         raise ValueError("get_choice_value: invalid choice")
     return VALUE_DICT[choice]
