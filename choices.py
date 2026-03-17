@@ -8,6 +8,10 @@ VALUE_DICT = {
     CHOICES[4] : "1"
 }
 
+def show_choices():
+    choices_list = [f"{choice}. {VALUE_DICT[choice]}" for choice in CHOICES]
+    return ", ".join(choices_list)
+
 def is_valid_choice(choice):
     return choice in CHOICES
 
