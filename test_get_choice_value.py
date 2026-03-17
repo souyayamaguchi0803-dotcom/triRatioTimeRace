@@ -1,4 +1,5 @@
 import unittest
+from get_choice_value import get_choice_value, CHOICES, VALUE_DICT
 
 class TestGetChoiceValue(unittest.TestCase):
     def test_get_correct_value(self):
