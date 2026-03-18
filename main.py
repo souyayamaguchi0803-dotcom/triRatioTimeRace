@@ -12,6 +12,7 @@ def main_game():
     # 選択肢を表示
     choices = show_choices()
     print(choices)
+    print()
     
     # 回答を取得
     print("your answer > ", end="")
