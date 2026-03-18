@@ -10,6 +10,10 @@ def main_game():
     choices = show_choices()
     print(choices)
     
+    # 回答を取得
+    print("your answer > ", end="")
+    answer = input()
+    
     
 if __name__ == "__main__":
     main_game()
