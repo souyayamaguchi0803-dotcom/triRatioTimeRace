@@ -1,5 +1,5 @@
 from generate_question import generate_question
-from choices import show_choices, get_choice_value
+from choices import show_choices, is_valid_choice, get_choice_value
 from judge_answer import judge
 
 def main_game():
@@ -16,9 +16,10 @@ def main_game():
     answer = input()
     
     # 正誤判定
-    answer_value = get_choice_value(answer)
-    result = judge(question, answer_value)
-    print(result)
+    if is_valid_choice(answer):
+        answer_value = get_choice_value(answer)
+        result = judge(question, answer_value)
+        print(result)
     
     
 if __name__ == "__main__":
