@@ -3,6 +3,8 @@ from choices import CHOICES, show_choices, is_valid_choice, get_choice_value
 from judge_answer import judge
 
 def main_game():
+    print()
+    
     # 問題を表示
     question = generate_question()
     print(f"{question} = ?")
@@ -22,6 +24,8 @@ def main_game():
         print(result)
     else:
         print(f"please choice answer from {CHOICES[0]} ~ {CHOICES[-1]}.")
+    
+    print()
     
     
 if __name__ == "__main__":
