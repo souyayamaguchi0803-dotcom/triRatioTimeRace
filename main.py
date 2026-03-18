@@ -1,5 +1,5 @@
 from generate_question import generate_question
-from choices import show_choices, is_valid_choice, get_choice_value
+from choices import CHOICES, show_choices, is_valid_choice, get_choice_value
 from judge_answer import judge
 
 def main_game():
@@ -20,6 +20,8 @@ def main_game():
         answer_value = get_choice_value(answer)
         result = judge(question, answer_value)
         print(result)
+    else:
+        print(f"please choice answer from {CHOICES[0]} ~ {CHOICES[-1]}.")
     
     
 if __name__ == "__main__":
