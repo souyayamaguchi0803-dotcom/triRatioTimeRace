@@ -42,6 +42,9 @@ def main_game():
     
     print()
     
+    # 結果発表
+    print("=== result ===")
+    
     # 正答率表示
     print(f"accuracy: {current_score}/{question_num}")
     
