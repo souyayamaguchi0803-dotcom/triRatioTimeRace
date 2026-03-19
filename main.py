@@ -2,6 +2,8 @@ from generate_question import generate_question
 from choices import CHOICES, show_choices, is_valid_choice, get_choice_value
 from judge_answer import judge
 
+current_score = 0
+
 def main_game():
     print()
     
@@ -23,6 +25,10 @@ def main_game():
         answer_value = get_choice_value(answer)
         result = judge(question, answer_value)
         print(result)
+        
+        # 正解時は得点増加
+        if result == "Correct!":
+            current_score += 1
     else:
         print(f"please choice answer from {CHOICES[0]} ~ {CHOICES[-1]}.")
     
