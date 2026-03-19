@@ -1,3 +1,4 @@
+import time
 from generate_question import generate_question
 from choices import CHOICES, show_choices, is_valid_choice, get_choice_value
 from judge_answer import judge
@@ -5,6 +6,8 @@ from judge_answer import judge
 def main_game():
     current_score = 0
     target_score = 5
+    
+    start_time = time.perf_counter()
 
     while current_score < target_score:
         print()
@@ -35,6 +38,14 @@ def main_game():
             print(f"please choice answer from {CHOICES[0]} ~ {CHOICES[-1]}.")
     
     print()
+    
+    # クリアタイム表示
+    end_time = time.perf_counter()
+    clear_time = end_time - start_time
+    print(f"time: {clear_time:.2f}")
+    
+    print()
+    
     
 if __name__ == "__main__":
     main_game()
