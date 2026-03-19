@@ -33,9 +33,8 @@ def main_game():
                 current_score += 1
         else:
             print(f"please choice answer from {CHOICES[0]} ~ {CHOICES[-1]}.")
-        
-        print()
     
+    print()
     
 if __name__ == "__main__":
     main_game()
